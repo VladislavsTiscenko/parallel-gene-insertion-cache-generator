@@ -1,7 +1,7 @@
 <h1>CUDA GPU-parallelized BFS to cache all possible gene insertions.</h1>
 <p>In metabolic engineering, we want to find optimal ways to add or delete genes to microorganisms to achieve our goal for production of a certain compound.
 One way to achieve this is to cache all possible shortest appendable reaction sequences, indexing them by the sequence's first and final compounds, as they both will be present in the network.
-There is also usually a maximum on gene insertions (i.e. 3), meaning that caching is feasible.</p>
+There is also usually a maximum on gene insertions (i.e. 3), meaning that caching can feasible in terms of RAM usage.</p>
 <p>To complete this caching, one can use a shortest-path graph algorithm on a graph of all possible relevant reactions with metabolites as nodes.
 As such graphs are usually very sizeable, we may speed up the process by paralellizing the algorithm with a GPU. Since the algorithm can find the minimum
 distance for all metabolites at once, we can simply run computation on each metabolite of a network in parallel.</p>
