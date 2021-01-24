@@ -7,5 +7,4 @@ As such graphs are usually very sizeable, we may speed up the process by paralel
 distance for all metabolites at once, we can simply run computation on each metabolite of a network in parallel.</p>
 <p>Let us assume that we don't need to weight the graph (which we most probably won't). That way, with N being the metabolites of a metabolic network,
 and V and E being the metabolites and reactions of the reaction database, assuming a connected graph, we can drop the time complexity
-from O(N^2*(V + E)) to O(kN*(V+E)), where k is N / num. of CUDA cores. In the case of Google Colab with their Nvidia Tesla T4 GPU, k could very well be
-less than 1.</p>
+from O(N^2*(V + E)) to O(kN*(V+E)), where k is N / num. of CUDA cores. In the case of Google Colab with their Nvidia Tesla T4 GPU with 2560 CUDA cores, k could very well be less than 1.</p>
