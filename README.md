@@ -1,4 +1,4 @@
-<h1>CUDA GPU-parallelized BFS to cache all possible gene insertions.</h1>
+<h1>GPU-parallelized shortest-path algorithm implementation to cache optimal gene insertions for metabolic engineering</h1>
 <p>In metabolic engineering, we want to find optimal ways to add or delete genes to microorganisms to achieve our goal for production of a certain compound.
 One way to achieve this is to cache all possible shortest appendable reaction sequences, indexing them by the sequence's first and final compounds, as they both will be present in the network.
 There is also usually a maximum on gene insertions (i.e. 3), meaning that caching can feasible in terms of RAM usage.</p>
